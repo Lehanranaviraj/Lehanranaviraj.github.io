@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Your Name</title>
+    <title>Portfolio - Lehan Rathnayake</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,10 +17,24 @@
             padding: 1rem;
             text-align: center;
         }
+        nav {
+            background-color: #444;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
         section {
             margin: 2rem auto;
             width: 80%;
             max-width: 1000px;
+        }
+        .about, .projects, .skills, .contact {
+            margin-bottom: 3rem;
         }
         footer {
             background-color: #333;
@@ -31,25 +45,72 @@
             bottom: 0;
             width: 100%;
         }
+        .project-item {
+            margin-bottom: 1.5rem;
+        }
+        .project-item a {
+            text-decoration: none;
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to My Portfolio</h1>
     </header>
-    <section>
-        <h2>About Me</h2>
-        <p>Hello! I'm [Your Name], a passionate Computer Science student and developer. This is where I showcase my projects and skills.</p>
+    
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Leehan Ranaviraj Bandara Rathnayake, a final-year Computer Science student with a passion for coding, problem-solving, and creating innovative solutions. My expertise lies in web development, machine learning, and backend systems. I enjoy building projects that solve real-world problems and continuously strive to expand my skills.</p>
+    </section>
+
+    <section id="projects" class="projects">
         <h2>Projects</h2>
+        <div class="project-item">
+            <h3>Cataracts Recognition System</h3>
+            <p>A machine learning system designed to detect cataracts using eye images. This project integrates deep learning and image processing to identify cataracts with high accuracy.</p>
+            <p><a href="https://github.com/Lehanranaviraj/cataracts-recognizer" target="_blank">View on GitHub</a></p>
+        </div>
+        <div class="project-item">
+            <h3>Food Delivery App</h3>
+            <p>A full-stack application for food delivery, featuring a user-friendly interface for customers to browse menus, place orders, and track deliveries. The app includes both a frontend (React) and a backend (Node.js).</p>
+            <p><a href="https://github.com/Lehanranaviraj/food-delivery-app" target="_blank">View on GitHub</a></p>
+        </div>
+        <div class="project-item">
+            <h3>BMI Calculator</h3>
+            <p>A simple BMI calculator built with Python. It calculates the Body Mass Index based on user input and provides insights on health status.</p>
+            <p><a href="https://github.com/Lehanranaviraj/bmi-calculator" target="_blank">View on GitHub</a></p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
         <ul>
-            <li><strong>Cataracts Recognition System</strong> – A machine learning system to detect cataracts.</li>
-            <li><strong>Food Delivery App</strong> – A full-stack food delivery application.</li>
-            <li><strong>BMI Calculator</strong> – A simple BMI calculator app.</li>
+            <li>Python, Flask</li>
+            <li>Machine Learning & Deep Learning</li>
+            <li>Web Development (HTML, CSS, JavaScript)</li>
+            <li>Frontend: React</li>
+            <li>Backend: Node.js, Express</li>
+            <li>Database: MongoDB, MySQL</li>
         </ul>
     </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out via email or connect with me on LinkedIn!</p>
+        <p>Email: lehanrathnayakacs@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/lehan-rathnayaka-a1248224a/" target="_blank">My LinkedIn Profile</a></p>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Your Name - Portfolio</p>
+        <p>&copy; 2024 Lehan Ranaviraj - Portfolio</p>
     </footer>
 </body>
 </html>
